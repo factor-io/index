@@ -1,0 +1,13 @@
+{
+  "required-connectors":[
+    "timer",
+    "web"
+  ],
+  "variables":{
+    "url":{
+        "friendly":"Request Bin URL",
+        "description": "Visit http://requestb.in and click `Create a ReqestBin`, use the Bin URL.",
+        "required":true
+    }
+  }}
+}

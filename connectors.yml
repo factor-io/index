@@ -1,0 +1,38 @@
+---
+gihtub:
+  name: Github
+  connectors: wss://open-connectors.factor.io/v0.4/github
+  docs: https://github.com/factor-io/connector-github/blob/master/README.md
+  source: https://github.com/factor-io/connector-github/
+heroku:
+  name: Heroku
+  connectors: wss://open-connectors.factor.io/v0.4/heroku
+  docs:https://github.com/factor-io/connector-heroku/blob/master/README.md
+  source: https://github.com/factor-io/connector-heroku
+  credentials:
+    api_key:
+      name: API Key
+      description: Your Heroku API Key can be found at https://dashboard-next.heroku.com/account under 'API Key'
+rackspace:
+  name: Rackspace
+  docs: https://github.com/factor-io/connector-rackspace/blob/master/README.md
+  source: https://github.com/factor-io/connector-rackspace
+  connectors:
+    compute: wss://open-connectors.factor.io/v0.4/rackspace_compute
+    flavors: wss://open-connectors.factor.io/v0.4/rackspace_flavors
+    images: wss://open-connectors.factor.io/v0.4/rackspace_images
+  credentials:
+    api_key:
+      name: API Key
+      description:
+    username:
+      name: Username
+      description: 
+    public_key:
+      name: Public SSH Key (pub)
+      required: false
+      description: 
+    private_key:
+      name: Private SSK Key (pem)
+      required: false
+      description: 

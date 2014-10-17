@@ -1,0 +1,22 @@
+{
+  "required-connectors":[
+    "github",
+    "heroku"
+  ],
+  "variables":{
+    "repo":{
+        "friendly":"Github repository",
+        "description": "Repository organization and specific repo (e.g. skierkowski/hello)",
+        "required":true,
+      },
+      "branch":{
+        "required":false,
+        "description": "Github Branch for the repository. Defaults to 'master'"
+      },
+      "app":{
+        "friendly":"Heroku App Name",
+        "description":"App name (id) from Heroku",
+        "required": true
+      }
+  }
+}

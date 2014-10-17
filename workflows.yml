@@ -1,0 +1,4 @@
+---
+github-to-heroku:
+  name: Github to Heroku Deployment
+  config: https://github.com/factor-io/index/blob/master/templates/github-to-heroku.json

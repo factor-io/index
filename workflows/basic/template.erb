@@ -1,0 +1,5 @@
+listen 'timer::every', minutes:1 do |post_info|
+  run 'web::post', url: '<% url %>' do |post_info|
+    info 'Post complete'
+  end
+end
