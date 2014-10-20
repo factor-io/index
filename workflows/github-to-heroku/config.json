@@ -5,15 +5,16 @@
   ],
   "variables":{
     "repo":{
-      "friendly": "Github repository",
+      "name": "Github repository",
       "description": "Repository organization and specific repo (e.g. skierkowski/hello)"
     },
     "branch": {
+      "name": "",
       "description": "Github Branch for the repository. Defaults to 'master'",
       "optional": true
     },
     "app": {
-      "friendly": "Heroku App Name",
+      "name": "Heroku App Name",
       "description": "App name (id) from Heroku"
     }
   }
