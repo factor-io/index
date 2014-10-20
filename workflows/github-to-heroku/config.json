@@ -9,7 +9,7 @@
       "description": "Repository organization and specific repo (e.g. skierkowski/hello)"
     },
     "branch": {
-      "name": "",
+      "name": "Name",
       "description": "Github Branch for the repository. Defaults to 'master'",
       "optional": true
     },
