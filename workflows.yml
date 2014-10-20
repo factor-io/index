@@ -1,5 +1,5 @@
 ---
 github-to-heroku:
   name: Github to Heroku Deployment
-  config: https://github.com/factor-io/index/blob/master/templates/github-to-heroku.json
+  config: https://github.com/factor-io/index/blob/master/workflows/github-to-heroku/config.json
   description: Deploy your application to Heroku whenever you push (or merge pull reuqest) to a Github Repo.
