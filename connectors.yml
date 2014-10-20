@@ -30,9 +30,9 @@ rackspace:
       description: 
     public_key:
       name: Public SSH Key (pub)
-      required: false
+      optional: true
       description: 
     private_key:
       name: Private SSK Key (pem)
-      required: false
+      optional: true
       description: 
