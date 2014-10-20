@@ -34,7 +34,7 @@ pushover:
   credentials:
     api_key:
       name: API Key
-      description: The API Key requires that you first create an application (https://pushover.net/apps/build) which then can be found under 'Apps & Plugins'
+      description: The API Key requires that you first create an application (https://pushover.net/apps/build) which then can be found under Apps & Plugins
     user:
       name: Username
       description: This is 'Your User Key' found on the right side when you login to https://pushover.net/
@@ -78,15 +78,15 @@ rackspace:
   credentials:
     api_key:
       name: API Key
-      description: 
+      description: To obtain your API Key go to the Cloud Control Panel > Account Settings. There you will find "API Key" information.
     username:
       name: Username
-      description: 
+      description: To obtain your Username go to the Cloud Control Panel > Account Settings. There you will find "Username" information.
     public_key:
-      name: Public SSH Key (pub)
+      name: Public SSH Key
       optional: true
-      description: 
+      description: Your public SSH Key (.pub) which you will use for connecting to this server
     private_key:
       name: Private SSK Key (pem)
       optional: true
-      description: 
+      description: Your private SSH Key (.pem) which you will use for connecting to this server
