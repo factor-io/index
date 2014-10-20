@@ -39,9 +39,7 @@ describe 'Connector' do
             expect(credential_settings['description']).to be_a(String)
           end
         end
-
       end
-
     end
   end
 end
