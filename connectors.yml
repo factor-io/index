@@ -1,5 +1,5 @@
 ---
-gihtub:
+github:
   name: Github
   connectors: wss://open-connectors.factor.io/v0.4/github
   docs: https://github.com/factor-io/connector-github/blob/master/README.md
