@@ -3,6 +3,7 @@
     "github",
     "heroku"
   ],
+  "template":"https://raw.githubusercontent.com/factor-io/index/master/workflows/github-to-heroku/template.erb",
   "variables":{
     "repo":{
       "name": "Github repository",
