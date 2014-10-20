@@ -5,18 +5,17 @@
   ],
   "variables":{
     "repo":{
-        "friendly":"Github repository",
-        "description": "Repository organization and specific repo (e.g. skierkowski/hello)",
-        "required":true,
+        "friendly": "Github repository",
+        "description": "Repository organization and specific repo (e.g. skierkowski/hello)"
       },
-      "branch":{
-        "required":false,
-        "description": "Github Branch for the repository. Defaults to 'master'"
+      "branch": {
+        "description": "Github Branch for the repository. Defaults to 'master'",
+        "optional": true
       },
-      "app":{
-        "friendly":"Heroku App Name",
-        "description":"App name (id) from Heroku",
-        "required": true
+      "app": {
+        "friendly": "Heroku App Name",
+        "description": "App name (id) from Heroku"
       }
+    }
   }
 }
