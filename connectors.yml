@@ -7,7 +7,7 @@ gihtub:
 heroku:
   name: Heroku
   connectors: wss://open-connectors.factor.io/v0.4/heroku
-  docs:https://github.com/factor-io/connector-heroku/blob/master/README.md
+  docs: https://github.com/factor-io/connector-heroku/blob/master/README.md
   source: https://github.com/factor-io/connector-heroku
   credentials:
     api_key:
@@ -24,7 +24,7 @@ rackspace:
   credentials:
     api_key:
       name: API Key
-      description:
+      description: 
     username:
       name: Username
       description: 
