@@ -4,6 +4,10 @@ gihtub:
   connectors: wss://open-connectors.factor.io/v0.4/github
   docs: https://github.com/factor-io/connector-github/blob/master/README.md
   source: https://github.com/factor-io/connector-github/
+  credentials:
+    api_key:
+      name: API Key
+      description: Youare API Key can be found under 'Personal access token' in Github settings https://github.com/settings/applications
 heroku:
   name: Heroku
   connectors: wss://open-connectors.factor.io/v0.4/heroku
@@ -13,6 +17,56 @@ heroku:
     api_key:
       name: API Key
       description: Your Heroku API Key can be found at https://dashboard-next.heroku.com/account under 'API Key'
+hipchat:
+  name: Hipchat
+  connectors: wss://open-connectors.factor.io/v0.4/hipchat
+  docs: https://github.com/factor-io/connector-hipchat/blob/master/README.md
+  source: https://github.com/factor-io/connector-hipchat
+  credentials:
+    api_key:
+      name: API Key
+      description: Your API Key can be found in Hipchat under My account > Edit Profile > API Access
+pushover:
+  name: Pushover
+  connectors: wss://open-connectors.factor.io/v0.4/pushover
+  docs: https://github.com/factor-io/connector-pushover/blob/master/README.md
+  source: https://github.com/factor-io/connector-pushover
+  credentials:
+    api_key:
+      name: API Key
+      description: The API Key requires that you first create an application (https://pushover.net/apps/build) which then can be found under 'Apps & Plugins'
+    user:
+      name: Username
+      description: This is 'Your User Key' found on the right side when you login to https://pushover.net/
+trello:
+  name: Trello
+  source: https://github.com/factor-io/connector-trello
+  docs: https://github.com/factor-io/connector-trello/blob/master/README.md
+  connectors:
+    boards: wss://open-connectors.factor.io/v0.4/trello_boards
+    cards: wss://open-connectors.factor.io/v0.4/trello_cards
+    lists: wss://open-connectors.factor.io/v0.4/trello_lists
+    members: wss://open-connectors.factor.io/v0.4/trello_members
+  credentials:
+    api_key:
+      name: API Key
+      description: Your API Key can be found here https://trello.com/1/appKey/generate
+    auth_token:
+      name: Authentication Token
+      description: To get your Auth Token you need to run https://trello.com/1/authorize?key=substitutewithyourapplicationkey&name=My+Application&expiration=never&response_type=token&scope=read,write to get it.
+slack:
+  name: Slack
+  source: https://github.com/factor-io/connector-slack
+  docs: https://github.com/factor-io/connector-slack/blob/master/README.md
+  connectors:
+    channel: wss://open-connectors.factor.io/v0.4/slack_channel
+    chat: wss://open-connectors.factor.io/v0.4/slack_chat
+    group: wss://open-connectors.factor.io/v0.4/slack_group
+    user: wss://open-connectors.factor.io/v0.4/slack_user
+  credentials:
+    token:
+      name: Token
+      description: Your Token can be found here 'https://api.slack.com/#auth', you may need to create it first.
 rackspace:
   name: Rackspace
   docs: https://github.com/factor-io/connector-rackspace/blob/master/README.md
