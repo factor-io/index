@@ -29,17 +29,17 @@ describe 'Workflows' do
 
       end
     end
+  end
 
-    it 'includes valid configurations' do
-      connector_file_contents = File.read('./connectors.yml')
-      connectors = YAML.parse(connector_file_contents).to_ruby
-      valid_connectors = connectors.keys
+  workflow_file_contents = File.read('./workflows.yml')
+  workflows = YAML.parse(workflow_file_contents).to_ruby
 
-
-      workflow_file_contents = File.read('./workflows.yml')
-      h = YAML.parse(workflow_file_contents).to_ruby
-
-      h.each do |workflow_id,workflow_settings|
+  workflows.each do |workflow_id,workflow_settings|
+    describe workflow_settings['name'] do
+      it 'includes valid configurations' do
+        connector_file_contents = File.read('./connectors.yml')
+        connectors = YAML.parse(connector_file_contents).to_ruby
+        valid_connectors = connectors.keys
         config_url = workflow_settings['config']
 
         config = {}
@@ -64,9 +64,7 @@ describe 'Workflows' do
         expect do
           RestClient.get(template_url)
         end
-
       end
-
     end
   end
 end
