@@ -3,3 +3,7 @@ github-to-heroku:
   name: Github to Heroku Deployment
   config: https://raw.githubusercontent.com/factor-io/index/master/workflows/github-to-heroku/config.json
   description: Deploy your application to Heroku whenever you push (or merge pull reuqest) to a Github Repo.
+basic:
+  name: Getting Started
+  config: https://raw.githubusercontent.com/factor-io/index/master/workflows/basic/config.json
+  description: A 'Cron' like workflow for running an HTTP post on a scheduled. Doesn't require any credentials.
