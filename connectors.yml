@@ -90,3 +90,90 @@ rackspace:
       name: Private SSK Key (pem)
       optional: true
       description: Your private SSH Key (.pem) which you will use for connecting to this server
+bitballoon:
+  name: BitBalloon
+  source: https://github.com/factor-io/connector-bitballoon
+  docs: https://github.com/factor-io/connector-bitballoon/blob/master/README.md
+  connectors: wss://open-connectors.factor.io/v0.4/bitballoon
+  credentials:
+    api_key:
+      name: API Key
+      description: Get an API Key under 'Personall access token' at https://www.bitballoon.com/applications
+chef:
+  name: Chef
+  source: https://github.com/factor-io/connector-chef
+  docs: https://github.com/factor-io/connector-chef/blob/master/README.md
+  connectors: wss://open-connectors.factor.io/v0.4/chef
+  credentials:
+    private_key:
+      name: Private SSK Key (pem)
+      description: Your private SSH Key (.pem) which you will use for connecting to this server
+    validation_key:
+      name: Validation Key
+      description: Key you received from Chef Server for validation (often saved in ~/.chef)
+ftp:
+  name: FTP
+  source: https://github.com/factor-io/connector-ftp
+  docs: https://github.com/factor-io/connector-ftp/blob/master/README.md
+  connectors: wss://open-connectors.factor.io/v0.4/ftp
+  credentials:
+    host:
+      name: Host URI
+      description: The full host URI including the optional U/P and Port (e.g. ftp://skierkowski:password@foo.com:21)
+ssh:
+  name: SSH
+  source: https://github.com/factor-io/connector-ssh
+  docs: https://github.com/factor-io/connector-ssh/blob/master/README.md
+  connectors: wss://open-connectors.factor.io/v0.4/ssh
+  credentials:
+    private_key:
+      name: Private SSK Key (pem)
+      description: Your private SSH Key (.pem) which you will use for connecting to this server
+jenkins:
+  name: Jenkins
+  source: https://github.com/factor-io/connector-jenkins
+  docs: https://github.com/factor-io/connector-jenkins/blob/master/README.md
+  connectors:
+    jobs: wss://open-connectors.factor.io/v0.4/jenkins_job
+  credentials: 
+    username:
+      name: Username
+      description: The username of your account to login to Jenkins
+      optional: true
+    host:
+      name: Host URL
+      description: The Host URL of the Jenkins server (including port if not 8080)
+    password:
+      name: Password
+      description: The password of your account to login to Jenkins
+      optional: true
+newrelic:
+  name: New Relic
+  source: https://github.com/factor-io/connector-newrelic
+  docs: https://github.com/factor-io/connector-newrelic/blob/master/README.md
+  connectors:
+    metrics: wss://open-connectors.factor.io/v0.4/newrelic_metrics
+  credentials: 
+    api_key:
+      name: API Key
+      description: Find your API Key at Account Settings > Data sharing > API Access by logging in https://login.newrelic.com/login
+timer:
+  name: Timer
+  source: https://github.com/factor-io/connector-timer
+  docs: https://github.com/factor-io/connector-timer/blob/master/README.md
+  connectors: wss://open-connectors.factor.io/v0.4/timer
+travis:
+  name: Travis-CI
+  source: https://github.com/factor-io/connector-travis
+  docs: https://github.com/factor-io/connector-travis/blob/master/README.md
+  connectors: wss://open-connectors.factor.io/v0.4/travis
+  credentials:
+    github_token:
+      name: Github Token
+      description: You can find your token at https://travis-ci.org/profile/info
+      optional: true
+web:
+  name: Web 
+  source: https://github.com/factor-io/connector-web
+  docs: https://github.com/factor-io/connector-web/blob/master/README.md
+  connectors: wss://open-connectors.factor.io/v0.4/web
