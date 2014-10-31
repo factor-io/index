@@ -177,3 +177,19 @@ web:
   source: https://github.com/factor-io/connector-web
   docs: https://github.com/factor-io/connector-web/blob/master/README.md
   connectors: wss://open-connectors.factor.io/v0.4/web
+tutum:
+  name: Tutum
+  source: https://github.com/factor-io/connector-tutum
+  docs: https://github.com/factor-io/connector-tutum/blob/master/README.md
+  connectors:
+    cluster: wss://open-connectors.factor.io/v0.4/tutum_cluster
+    container: wss://open-connectors.factor.io/v0.4/tutum_container
+    node: wss://open-connectors.factor.io/v0.4/tutum_node
+    service: wss://open-connectors.factor.io/v0.4/tutum_service
+  credentials:
+    username:
+      name: Username
+      description: Your Tutum username appears in the uper right corner of the dashboard https://dashboard.tutum.co/.
+    api_key:
+      name: API Key
+      description: Your Tutum API Key can be found at https://dashboard.tutum.co/account/ under the 'Api key' tab
