@@ -193,3 +193,17 @@ tutum:
     api_key:
       name: API Key
       description: Your Tutum API Key can be found at https://dashboard.tutum.co/account/ under the 'Api key' tab
+mailgun:
+  name: Mailgun
+  source: https://github.com/factor-io/connector-mailgun
+  docs: https://github.com/factor-io/connector-mailgun/blob/master/README.md
+  connectors:
+    messages: wss://open-connectors.factor.io/v0.4/mailgun_messages
+  credentials:
+    api_key:
+      name: API Key
+      description: Your API Key can be found on the control panel under 'API Key' after login.
+    domain: 
+      name: Domain
+      description: This is the domain you want to use for various actions like sending emails, not required for all actions.
+      optional: true
