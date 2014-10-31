@@ -7,7 +7,7 @@ github:
   credentials:
     api_key:
       name: API Key
-      description: Youare API Key can be found under 'Personal access token' in Github settings https://github.com/settings/applications
+      description: Your API Key can be found under 'Personal access token' in Github settings https://github.com/settings/applications
 heroku:
   name: Heroku
   connectors: wss://open-connectors.factor.io/v0.4/heroku
