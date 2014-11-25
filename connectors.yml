@@ -2,8 +2,8 @@
 github:
   name: Github
   connectors:
-    repos: wss://open-connectors.factor.io/v0.4/github_repos
-    issues: wss://open-connectors.factor.io/v0.4/github_issues
+    repos: wss://open-connectors.factor.io/v0.4/github_repo
+    issues: wss://open-connectors.factor.io/v0.4/github_issue
   docs: https://github.com/factor-io/connector-github/blob/master/README.md
   source: https://github.com/factor-io/connector-github/
   credentials:
