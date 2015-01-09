@@ -209,3 +209,15 @@ mailgun:
       name: Domain
       description: This is the domain you want to use for various actions like sending emails, not required for all actions.
       optional: true
+pivotal:
+  name: Pivotal Tracker
+  source: https://github.com/factor-io/connector-pivotal
+  docs: http://docs.factor.io/connectors/pivotal-tracker.html
+  connectors:
+    projects: wss://open-connectors.factor.io/v0.4/pivotal_projects
+    stories: wss://open-connectors.factor.io/v0.4/pivotal_stories
+    notes: wss://open-connectors.factor.io/v0.4/pivotal_notes
+  credentials:
+    api_key:
+      name: API Key
+      description: The API Key can be found at https://www.pivotaltracker.com/profile in the API Token section.
