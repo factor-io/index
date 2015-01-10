@@ -4,6 +4,7 @@ github:
   connectors:
     repos: wss://open-connectors.factor.io/v0.4/github_repo
     issues: wss://open-connectors.factor.io/v0.4/github_issue
+    releases: wss://open-connectors.factor.io/v0.4/github_releases
   docs: https://github.com/factor-io/connector-github/blob/master/README.md
   source: https://github.com/factor-io/connector-github/
   credentials:
