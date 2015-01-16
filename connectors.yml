@@ -217,7 +217,8 @@ pivotal:
   connectors:
     projects: wss://open-connectors.factor.io/v0.4/pivotal_projects
     stories: wss://open-connectors.factor.io/v0.4/pivotal_stories
-    notes: wss://open-connectors.factor.io/v0.4/pivotal_notes
+    comments: wss://open-connectors.factor.io/v0.4/pivotal_comments
+    labels: wss://open-connectors.factor.io/v0.4/pivotal_labels
   credentials:
     api_key:
       name: API Key
