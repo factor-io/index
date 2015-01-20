@@ -8,7 +8,7 @@
     "repo":{
       "name": "Github repository",
       "description": "Repository organization and specific repo (e.g. skierkowski/hello)"
-    }
+    },
     "app": {
       "name": "Heroku App Name",
       "description": "App name (id) from Heroku"
