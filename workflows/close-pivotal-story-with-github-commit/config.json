@@ -7,11 +7,11 @@
   "variables":{
     "repo":{
       "name": "Github repository",
-      "description": "Repository organization and specific repo (e.g. skierkowski/hello)"
+      "description": "The Github Repo ID. For example https://github.com/skierkowski/hello has repo 'hello'"
     },
-    "app": {
-      "name": "Heroku App Name",
-      "description": "App name (id) from Heroku"
+    "username": {
+      "name": "Github repo username",
+      "description": "The Github Repo username. For example https://github.com/skierkowski/hello has username 'skierkowski'"
     },
     "project": {
       "name": "Pivotal Tracker Project ID",
