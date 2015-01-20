@@ -1,6 +1,6 @@
 {
   "required-connectors":[ "timer", "web" ],
-  "template": "https://github.com/factor-io/index/blob/master/workflows/basic/template.liquid",
+  "template": "https://raw.githubusercontent.com/factor-io/index/master/workflows/basic/template.liquid",
   "variables": {
     "url": {
       "name": "Request Bin URL",
