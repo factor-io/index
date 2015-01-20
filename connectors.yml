@@ -223,3 +223,16 @@ pivotal:
     api_key:
       name: API Key
       description: The API Key can be found at https://www.pivotaltracker.com/profile in the API Token section.
+irc:
+  name: Internet Relay Chat
+  source: https://github.com/factor-io/connector-irc
+  docs: http://docs.factor.io/connectors/irc.html
+  connectors:
+    messages: wss://open-connectors.factor.io/v0.4/irc_messages
+  credentials:
+    server:
+      name: Server Address
+      description: The host address you would like to use (e.g. 'irc.freenode.net')
+    user:
+      name: User
+      description: (optional) name you would like to use for interact with the IRC channel (e.g. 'factorbot').
