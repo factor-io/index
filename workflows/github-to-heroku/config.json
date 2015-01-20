@@ -3,17 +3,12 @@
     "github",
     "heroku"
   ],
-  "template":"https://raw.githubusercontent.com/factor-io/index/master/workflows/github-to-heroku/template.erb",
+  "template":"https://raw.githubusercontent.com/factor-io/index/master/workflows/github-to-heroku/template.liquid",
   "variables":{
     "repo":{
       "name": "Github repository",
       "description": "Repository organization and specific repo (e.g. skierkowski/hello)"
-    },
-    "branch": {
-      "name": "Name",
-      "description": "Github Branch for the repository. Defaults to 'master'",
-      "optional": true
-    },
+    }
     "app": {
       "name": "Heroku App Name",
       "description": "App name (id) from Heroku"
