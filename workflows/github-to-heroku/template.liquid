@@ -1,0 +1,5 @@
+listen 'github::push', repo:'{{repo}}' do |repo_info|
+  run 'heroku::deploy', app:'{{app}}', content:repo_info.content do |deploy_info|
+    success "Finished deploying '{{app}}' to '{{app}}' with revision #{deploy_info.revision}"
+  end
+end
