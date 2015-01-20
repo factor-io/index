@@ -7,3 +7,7 @@ basic:
   name: Getting Started
   config: https://raw.githubusercontent.com/factor-io/index/master/workflows/basic/config.json
   description: A 'Cron' like workflow for running an HTTP post on a scheduled. Doesn't require any credentials.
+close-pivotal-story-with-github-commit:
+  name: Closing Pivotal Tracker stories via Github commit messages
+  config: https://raw.githubusercontent.com/factor-io/index/master/workflows/close-pivotal-story-with-github-commit/config.json
+  description: Use the same syntax as defined by Github for closing Github Issues to set state of a Pivotal Tracker storiy to 'delivered'.

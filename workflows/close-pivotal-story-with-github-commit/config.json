@@ -1,0 +1,21 @@
+{
+  "required-connectors":[
+    "github",
+    "pivotal"
+  ],
+  "template":"https://raw.githubusercontent.com/factor-io/index/master/workflows/close-pivotal-story-with-github-commit/template.liquid",
+  "variables":{
+    "repo":{
+      "name": "Github repository",
+      "description": "Repository organization and specific repo (e.g. skierkowski/hello)"
+    },
+    "app": {
+      "name": "Heroku App Name",
+      "description": "App name (id) from Heroku"
+    },
+    "project": {
+      "name": "Pivotal Tracker Project ID",
+      "description": "The Project ID from Pivotal Tracker. For example in https://www.pivotaltracker.com/n/projects/1255078 the Project ID is 1255078"
+    }
+  }
+}
