@@ -106,7 +106,10 @@ chef:
   name: Chef
   source: https://github.com/factor-io/connector-chef
   docs: https://github.com/factor-io/connector-chef/blob/master/README.md
-  connectors: wss://open-connectors.factor.io/v0.4/chef
+  connectors:
+    knife: wss://open-connectors.factor.io/v0.4/chef_knife
+    clients: wss://open-connectors.factor.io/v0.4/chef_clients
+    environments: wss://open-connectors.factor.io/v0.4/chef_environments
   credentials:
     private_key:
       name: Private SSK Key (pem)
