@@ -3,7 +3,7 @@
     "github",
     "pivotal"
   ],
-  "template":"https://raw.githubusercontent.com/factor-io/index/master/workflows/close-pivotal-story-with-github-commit/template.liquid",
+  "template":"https://raw.githubusercontent.com/factor-io/index/master/workflows/update-pivotal-story-on-test-run/template.liquid",
   "variables":{
     "repo":{
       "name": "Github repository",
