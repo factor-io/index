@@ -3,8 +3,8 @@ listen 'github::repos::push', repo:'{{repo}}', username:'{{username}}' do |repo|
     regex = /(closes|closed|close|fixes|fixed|fix|resolves|resolved|resolved)\s+#(\d+)/
     ids = commit['message'].scan(regex).to_a.map{|i| i[1]}
     ids.each do |story_id|
-      info "Setting story #{story_id} to 'delivered'"
-      run 'pivotal::stories::update', project:'{{project}}',  story:story_id, current_state:'delivered'
+      info "Setting story #{story_id} to 'finished'"
+      run 'pivotal::stories::update', project:'{{project}}',  story:story_id, current_state:'finished'
     end
   end
 end
