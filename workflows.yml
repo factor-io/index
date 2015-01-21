@@ -11,3 +11,7 @@ close-pivotal-story-with-github-commit:
   name: Closing Pivotal Tracker stories via Github commit messages
   config: https://raw.githubusercontent.com/factor-io/index/master/workflows/close-pivotal-story-with-github-commit/config.json
   description: Use the same syntax as defined by Github for closing Github Issues to set state of a Pivotal Tracker storiy to 'delivered'.
+update-pivotal-story-on-test-run:
+  name: Update Pivotal Tracker Story when Jenkins test runs
+  config: https://raw.githubusercontent.com/factor-io/index/master/workflows/update-pivotal-story-on-test-run/config.json
+  description: After you push a commit to Github it will run a Jenkins build then update Pivotal Stories associated with commits to 'finished' on success

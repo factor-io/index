@@ -1,0 +1,29 @@
+listen 'github::repos::push', repo:'{{repo}}', username:'{{username}}' do |repo|
+  
+  # Extract all story ids from all commits for this push
+  commit_ids = []
+  repo.commits.each do |commit|
+    regex = /(closes|closed|close|fixes|fixed|fix|resolves|resolved|resolved)\s+#(\d+)/
+    ids = commit['message'].scan(regex).to_a.map{|i| i[1]}
+    commit_ids.concat ids
+  end
+
+  # Update stories to 'delivered'
+  commit_ids.each do |story_id|
+    info "Setting story #{story_id} to 'delivered'"
+    run 'pivotal::stories::update', project:'{{project}}',  story:story_id, current_state:'delivered'
+  end
+
+  # Run a build in Jenkins
+  run 'jenkins::jobs::build', job:'{{job}}' do |build|
+    success 'Build succeeded' if build.status == 'success'
+    error 'Buid failed' if build.status == 'failed'
+    commit_ids.each do |story_id|
+      if build.status == 'success'
+        run 'pivotal::stories::update', project:'{{project}}',  story:story_id, current_state:'delivered'
+      else
+        run 'pivotal::labels::create', project:'{{project}}', story:story_id, name:'failed' 
+      end
+    end
+  end
+end

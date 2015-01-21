@@ -1,0 +1,25 @@
+{
+  "required-connectors":[
+    "github",
+    "pivotal"
+  ],
+  "template":"https://raw.githubusercontent.com/factor-io/index/master/workflows/close-pivotal-story-with-github-commit/template.liquid",
+  "variables":{
+    "repo":{
+      "name": "Github repository",
+      "description": "The Github Repo ID. For example https://github.com/skierkowski/hello has repo 'hello'"
+    },
+    "username": {
+      "name": "Github repo username",
+      "description": "The Github Repo username. For example https://github.com/skierkowski/hello has username 'skierkowski'"
+    },
+    "project": {
+      "name": "Pivotal Tracker Project ID",
+      "description": "The Project ID from Pivotal Tracker. For example in https://www.pivotaltracker.com/n/projects/1255078 the Project ID is 1255078"
+    },
+    "job": {
+      "name": "Jenkins Job Name",
+      "description": "The Job ID in Jenkins to build this app"
+    }
+  }
+}
