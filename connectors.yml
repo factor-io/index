@@ -110,6 +110,7 @@ chef:
     knife: wss://open-connectors.factor.io/v0.4/chef_knife
     clients: wss://open-connectors.factor.io/v0.4/chef_clients
     environments: wss://open-connectors.factor.io/v0.4/chef_environments
+    databags: wss://open-connectors.factor.io/v0.4/chef_databags
   credentials:
     private_key:
       name: Private SSK Key (pem)
